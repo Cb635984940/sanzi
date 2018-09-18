@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.big-box>div{
+			float: left;
+			margin-left:30px;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content: space-between;
+		}
+		.box1{
+			width: 40px;
+			height: 40px;
+			background:black;
+			border-radius:50%;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			flex-direction: column-reverse;
+			justify-content: space-between;
+		}
+		.box3{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			flex-direction: column-reverse;
+			justify-content:space-between;
+			align-items: center;
+		}
+		.box4{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			flex-direction: column-reverse;
+			justify-content:space-between;
+			align-items: flex-end;
+		}
+		.box5{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:space-between;	
+		}
+		.row{
+			width:40px;
+			height: 100%;
+			display: flex;	
+		}
+		.row:nth-child(2){
+			width:40px;
+			height: 100%;
+			display: flex;	
+			align-items: center;
+		}
+	    .box6{
+	    	width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:space-between;
+	    }
+	    .box6 .row1{
+	    	display:flex;
+	    	align-items: flex-end;
+	    }
+	    .box7{
+	    	width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:space-between;
+			}
+			.row7{
+				display: flex;
+				align-items: flex-end;
+			}
+			.box8{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:flex-end;
+		   }
+		   .row8{
+		   	    /*height: 40px;*/
+		   		/*background: red;*/
+				display: flex;
+				align-items: flex-end;
+				}
+			.box9{
+			width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:flex-end;
+			justify-content: space-between;
+		   }	
+		   .row9{
+		   	/*background: red;*/
+		   	flex-direction: column;
+		   	justify-content: space-between;
+		   	display: flex;
+		   }
+		   .box20{
+		   	width: 50px;
+			height: 50px;
+			background:black;
+			border-radius:50%;
+		   }
+		   .box10{
+		   	width: 200px;
+			height: 200px;
+			background: gainsboro;
+			box-shadow:0 0 0 20px 5px rgba(0,0,0,0.5);
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content:space-between;	
+			flex-wrap: wrap;
+		   }
+	</style>
+	<body>
+	<div class="big-box"> 
+		
+	<div class="box">
+		<div class="box1"></div>
+		<div class="box1"></div>		
+	</div>
+	<div class="box2">
+		<div class="box1"></div>
+		<div class="box1"></div>		
+	</div>	
+	<div class="box3">
+		<div class="box1"></div>
+		<div class="box1"></div>		
+	</div>	
+	<div class="box4">
+		<div class="box1"></div>
+		<div class="box1"></div>		
+	</div>	
+	<div class="box5">
+		<div class="row">
+			<div class="box1"></div>
+		</div>
+		<div class="row">
+			<div class="box1"></div>	
+		</div>
+		<div class="row">	
+		</div>		
+	</div>	
+	<div class="box6">
+		<div class="row">
+			<div class="box1"></div>
+		</div>
+		<div class="row1">
+			<div class="box1"></div>	
+		</div>		
+	</div>		
+	<div class="box7">
+		<div class="row">
+			<div class="box1"></div>
+		</div>
+		<div class="row">
+			<div class="box1"></div>	
+		</div>
+		<div class="row7">
+			<div class="box1"></div>
+		</div>		
+	</div>		
+	<div class="box8">
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="row8">
+			<div class="box1"></div>
+		</div>			
+	</div>	
+	<div class="box9">
+		<div class="row9">
+			<div class="box1"></div>
+		<div class="box1"></div>
+		</div>		
+		<div class="row9">
+		<div class="box1"></div>
+		<div class="box1"></div>
+		</div>		
+	</div>	
+	<div class="box9">
+		<div class="row9">
+			<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="box1"></div>
+		</div>		
+		<div class="row9">
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="box1"></div>
+		</div>		
+	</div>	
+	<div class="box10">
+	    <div class="box20"></div>
+		<div class="box20"></div>
+		<div class="box20"></div>
+		
+		<div class="box20"></div>
+		<div class="box20"></div>
+		<div class="box20"></div>
+		
+	</div>	
+	
+	
+		
+		
+	</div>	
+		
+	</body>
+</html>
